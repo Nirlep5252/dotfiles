@@ -208,7 +208,7 @@ bindsym Mod1+shift+x exec /home/$USER/.config/scripts/lock
 
 # Transparent Terminal
 exec_always picom -f
-exec_always killall -q polybar
+exec_always polybar-msg cmd quit
 exec_always --no-startup-id polybar
 
 # Screenshot
