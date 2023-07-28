@@ -10,3 +10,5 @@
 !/scripts/*
 !/lvim/*
 !/zsh/*
+!/rofi/*
+!/polybar/*
