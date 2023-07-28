@@ -208,6 +208,7 @@ bindsym Mod1+shift+x exec /home/$USER/.config/scripts/lock
 
 # Transparent Terminal
 exec_always picom -f
+exec_always --no-startup-id polybar
 
 # Screenshot
 bindsym --release Print exec "flameshot full"
@@ -255,23 +256,24 @@ set $in-text    #969696
 
 set $focused-ws #BC13FE
 set $bar-color #523d640D
-bar {
+#bar {
         # status_command i3status -c /home/$USER/.config/i3status/i3status.conf
-	status_command i3blocks -c /home/$USER/.config/i3blocks/i3blocks.conf
-	font pango: Cascadia Code Regular 10
-	i3bar_command i3bar --transparency
-	tray_output none
+	#status_command i3blocks -c /home/$USER/.config/i3blocks/i3blocks.conf
+  	# status_command polybar
+	#font pango: Cascadia Code Regular 10
+	#i3bar_command i3bar --transparency
+  #i3bar_command polybar
 	# position top
-	colors {
-                background $bgcolor
-                separator #fff
+	#colors {
+                #background $bgcolor
+                #separator #fff
                 #                       border          background      text
                 # focused_workspace       $focused_ws     $focused_ws     $text
-                focused_workspace       $in-bgcolor        $in-bgcolor        $text
-                inactive_workspace      $bgcolor     $bgcolor     $text
-                urgent_workspace        $u-bgcolor      $u-bgcolor      $text   
-        }
-}
+                #focused_workspace       $in-bgcolor        $in-bgcolor        $text
+                #inactive_workspace      $bgcolor     $bgcolor     $text
+                #urgent_workspace        $u-bgcolor      $u-bgcolor      $text   
+        #}
+#}
 
 #                       border          background      text            indicator (a line which shows where the next window will be placed)     
 
@@ -283,6 +285,9 @@ client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcol
 # Gaps
 gaps inner 8
 gaps outer 2
+
+default_border pixel 1
+default_floating_border pixel 1
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
