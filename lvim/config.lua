@@ -5,3 +5,7 @@
 
 -- Relative numbers
 vim.opt.relativenumber = true
+
+-- System clipboard
+-- vim.opt.clipboard = "unnamedplus"
+vim.api.nvim_set_option("clipboard", "unnamedplus")
