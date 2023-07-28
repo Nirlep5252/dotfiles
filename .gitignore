@@ -2,9 +2,9 @@
 *
 
 !.gitignore
-!alacritty
-!i3
-!i3status
-!scripts
-!lvim
-!zsh
+!alacritty/*
+!i3/*
+!i3status/*
+!scripts/*
+!lvim/*
+!zsh/*
