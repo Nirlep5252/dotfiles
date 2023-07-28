@@ -1,8 +1,8 @@
 # Ignore everything
-*
+!/alacritty/alacritty.yml
+/**
 
-!.gitignore
-!alacritty/*
+!/.gitignore
 !i3/*
 !i3status/*
 !scripts/*
