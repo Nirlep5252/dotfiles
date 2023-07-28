@@ -61,7 +61,8 @@ bindsym Mod1+Return exec alacritty
 bindsym Mod1+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym Mod1+d exec --no-startup-id dmenu_run
+# bindsym Mod1+d exec --no-startup-id dmenu_run
+bindsym Mod1+d exec --no-startup-id rofi -show run
 # A more modern dmenu replacement is rofi:
 # bindsym Mod1+d exec "rofi -modi drun,run -show drun"
 # There also is i3-dmenu-desktop which only displays applications shipping a
@@ -260,6 +261,7 @@ bar {
 	font pango: Cascadia Code Regular 10
 	i3bar_command i3bar --transparency
 	tray_output none
+	# position top
 	colors {
                 background $bgcolor
                 separator #fff
