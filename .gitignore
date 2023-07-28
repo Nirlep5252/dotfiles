@@ -5,6 +5,7 @@
 !/alacritty/alacritty.yml
 !/i3/config
 !/i3status/i3status.conf
+!/i3blocks/i3blocks.conf
 !/scripts/*
 !/lvim/*
 !/zsh/*
