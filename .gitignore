@@ -1,10 +1,10 @@
 # Ignore everything
-!/alacritty/alacritty.yml
 /**
 
 !/.gitignore
-!i3/*
-!i3status/*
-!scripts/*
-!lvim/*
-!zsh/*
+!/alacritty/alacritty.yml
+!/i3/config
+!/i3status/i3status.conf
+!/scripts/*
+!/lvim/*
+!/zsh/*
