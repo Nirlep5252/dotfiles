@@ -201,7 +201,8 @@ bindsym Mod1+r mode "resize"
 exec_always xrandr --output eDP-1 --mode 1920x1080
 
 # WALLPAPER LOL
-exec_always feh --bg-fill ~/Wallpapers/cyberrr.jpg
+# exec_always feh --bg-fill ~/Wallpapers/cyberrr.jpg
+exec_always nitrogen --restore &
 
 # LOCK SCREEN
 bindsym Mod1+shift+x exec /home/$USER/.config/scripts/lock
@@ -242,7 +243,7 @@ set $TOUCHPAD = "DELL0B5E:00 04F3:317E Touchpad"
 # exec_always xinput --set-prop $TOUCHPAD 'libinput Natural Scrolling Enabled' 1
 # exec_always xinput --set-prop $TOUCHPAD 'libinput Scrolling Pixel Distance' 50
 
-exec_always xinput --set-prop "PixArt Lenovo USB Optical Mouse" "libinput Accel Speed" -0.6
+exec_always xinput --set-prop "PixArt Lenovo USB Optical Mouse" "libinput Accel Speed" -0.8
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
