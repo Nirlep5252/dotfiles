@@ -208,7 +208,7 @@ exec_always nitrogen --restore &
 bindsym Mod1+shift+x exec /home/$USER/.config/scripts/lock
 
 # Transparent Terminal
-exec_always picom -f
+exec_always picom &
 exec_always polybar-msg cmd quit
 exec_always --no-startup-id polybar
 
@@ -288,8 +288,11 @@ client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcol
 gaps inner 8
 gaps outer 2
 
-default_border pixel 1
-default_floating_border pixel 1
+# default_border pixel 1
+# default_floating_border pixel 1
+
+default_border none
+default_floating_border none
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
