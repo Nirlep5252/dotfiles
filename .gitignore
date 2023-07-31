@@ -13,3 +13,5 @@
 !/rofi/*
 !/polybar/*
 !/picom/picom.conf
+!/neofetch/config.conf
+!/kitty/kitty.conf
