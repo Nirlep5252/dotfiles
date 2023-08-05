@@ -209,8 +209,12 @@ bindsym Mod1+shift+x exec /home/$USER/.config/scripts/lock
 
 # Transparent Terminal
 exec_always picom &
+exec_always fcitx5 -d &
 exec_always polybar-msg cmd quit
-exec_always --no-startup-id polybar
+
+exec_always polybar &
+# exec_always --no-startup-id ~/.config/polybar/launch.sh --hack
+# GOOD POLYBAR THEMES: forest, hack
 
 # Screenshot
 bindsym --release Print exec "flameshot full"
@@ -275,24 +279,46 @@ set $bar-color #523d640D
                 #inactive_workspace      $bgcolor     $bgcolor     $text
                 #urgent_workspace        $u-bgcolor      $u-bgcolor      $text   
         #}
+  #tray_output none
 #}
 
 #                       border          background      text            indicator (a line which shows where the next window will be placed)     
 
-client.focused          $bgcolor        $bgcolor        $text           $indicator
-client.unfocused        $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
-client.focused_inactive $in-bgcolor     $in-bgcolor     $in-text        $in-bgcolor
-client.urgent           $u-bgcolor      $u-bgcolor      $text           $u-bgcolor
+# client.focused          #d81b60        $bgcolor        $text           $indicator
+# client.unfocused        #d81b60     $in-bgcolor     $in-text        $in-bgcolor
+# client.focused_inactive #d81b60     $in-bgcolor     $in-text        $in-bgcolor
+# client.urgent           #d81b60      $u-bgcolor      $text           $u-bgcolor
+
+
+# DEFAULTT
+# class                 border  backgr. text    indicator child_border
+# client.focused          #4c7899 #285577 #ffffff #2e9ef4   #285577
+# client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+# client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+# client.urgent           #2f343a #900000 #ffffff #900000   #900000
+# client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+
+# DRACULA
+# class                 border  bground text    indicator child_border
+client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
+client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
+client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
+client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+
+client.background       #F8F8F2
 
 # Gaps
-gaps inner 8
-gaps outer 2
+gaps inner 0
+gaps outer 0
 
 # default_border pixel 1
 # default_floating_border pixel 1
 
-default_border none
-default_floating_border none
+# default_border pixel 5
+# default_floating_border pixel 5
+# default_border none
+# default_floating_border none
 
 #######################################################################
 # automatically start i3-config-wizard to offer the user to create a
