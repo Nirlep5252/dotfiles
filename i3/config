@@ -40,6 +40,10 @@ set $refresh_i3status killall -SIGUSR1 i3status
 # bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 # bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
+# BRIGHTNESS SETTINGS
+bindsym XF86MonBrightnessUp exec ~/.config/scripts/brightness.sh +
+bindsym XF86MonBrightnessDown exec ~/.config/scripts/brightness.sh -
+
 # use these keys for focus, movement, and resize directions when reaching for
 # the arrows is not convenient
 set $up k
@@ -248,6 +252,7 @@ set $TOUCHPAD = "DELL0B5E:00 04F3:317E Touchpad"
 # exec_always xinput --set-prop $TOUCHPAD 'libinput Scrolling Pixel Distance' 50
 
 exec_always xinput --set-prop "PixArt Lenovo USB Optical Mouse" "libinput Accel Speed" -0.8
+exec_always xinput --set-prop "Logitech G304" "libinput Accel Speed" -0.8
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -312,8 +317,8 @@ client.background       #F8F8F2
 gaps inner 0
 gaps outer 0
 
-# default_border pixel 1
-# default_floating_border pixel 1
+default_border pixel 1
+default_floating_border pixel 1
 
 # default_border pixel 5
 # default_floating_border pixel 5
