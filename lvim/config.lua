@@ -7,6 +7,14 @@ vim.opt.relativenumber = true
 vim.opt.wrap = true
 vim.opt.guicursor = "i:block"
 
+vim.filetype.add({
+  extension = {
+    mdx = "mdx"
+  }
+})
+-- local ft_to_parse = require("nvim-treesitter.parsers").filetype_to_parsername
+vim.treesitter.language.register("markdown", "mdx")
+
 lvim.builtin.terminal.open_mapping = "<c-t>"
 
 -- table.insert(lvim.plugins, {
