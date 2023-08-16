@@ -25,6 +25,9 @@
     //         "default": ""
     //     }
     // },
+    "wlr/workspaces": {
+      "on-click": "activate"
+    },
     "hyprland/window": {
       "max-length": 200,
       "seperate-outputs": true
