@@ -1,3 +1,3 @@
 ### rice moment:
 
-![image](https://media.discordapp.net/attachments/1010432704434667524/1134515980790399158/lol.png)
+https://github.com/Nirlep5252/dotfiles/assets/70529587/625a7ad1-fa67-4020-b469-acbee0137687
