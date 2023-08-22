@@ -2,6 +2,7 @@
 /**
 
 !/.gitignore
+!/.gitmodules
 !/README.md
 !/alacritty/alacritty.yml
 !/i3/config
