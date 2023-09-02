@@ -149,4 +149,4 @@ export PATH=~/bin:/home/nirlep/.local/share/pnpm:/home/nirlep/.local/bin:/home/n
 
 export HYPRSHOT_DIR=~/Screenshots/
 
-# clear; neofetch
+clear; echo ""; pfetch

@@ -29,10 +29,28 @@ lvim.builtin.terminal.open_mapping = "<c-t>"
 --   end,
 -- })
 table.insert(lvim.plugins, {
-  "Mofiqul/dracula.nvim"
+  "Mofiqul/dracula.nvim",
+  {
+    "catppuccin/nvim",
+    config = function()
+      vim.g.catppuccin_flavour = "mocha"
+    end
+  },
+  {
+    'xeluxee/competitest.nvim',
+    dependencies = 'MunifTanjim/nui.nvim',
+    config = function()
+      require('competitest').setup()
+      vim.keymap.set("n", "<leader>-rt", function() vim.cmd(":CompetiTest receive testcases") end)
+      vim.keymap.set("n", "<leader>-rc", function() vim.cmd(":CompetiTest receive contest") end)
+      vim.keymap.set("n", "<leader>-rp", function() vim.cmd(":CompetiTest receive problem") end)
+      vim.keymap.set("n", "<leader>-t", function() vim.cmd(":CompetiTest run") end)
+    end,
+  }
 })
 
 lvim.transparent_window = true
+lvim.colorscheme = "catppuccin-mocha"
 
 if vim.g.neovide then
   vim.opt.guifont = "Cascadia Code:h11"
@@ -44,5 +62,5 @@ if vim.g.neovide then
   vim.g.neovide_cursor_animate_command_line = true
   lvim.transparent_window = false
   vim.g.neovide_fullscreen = false
-  vim.cmd("colorscheme dracula")
+  vim.cmd("colorscheme catppuccin")
 end

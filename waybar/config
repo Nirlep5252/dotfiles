@@ -1,10 +1,14 @@
 {
     "layer": "top", // Waybar at top layer
     // "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 16, // Waybar height (to be removed for auto height)
+    "height": 10, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
-    "spacing": 4, // Gaps between modules (4px)
+    "spacing": 10, // Gaps between modules (4px)
     // Choose the order of the modules
+    "margin-top": 5,
+    "margin-left": 5,
+    "margin-bottom": 5,
+    "margin-right": 5,
     "modules-left": ["wlr/workspaces", "custom/media"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["pulseaudio", "network", "battery", "clock", "tray"],
@@ -29,7 +33,7 @@
       "on-click": "activate"
     },
     "hyprland/window": {
-      "max-length": 200,
+      "max-length": 100,
       "seperate-outputs": true
     },
     "keyboard-state": {
