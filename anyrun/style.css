@@ -8,16 +8,15 @@
   /* -webkit-backdrop-filter: blur(10.6px); */
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-
 box#main {
-  border-radius: 30px;
+  /* border-radius: 30px; */
   background-color: #282a36;
   color: #f8f8f2;
 }
 
 list#main {
   background-color: rgba(0, 0, 0, 0);
-  border-radius: 30px;
+  /* border-radius: 30px; */
   color: #f8f8f2;
 }
 

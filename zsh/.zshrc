@@ -11,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-source ~/.config/zsh/geometry/geometry.zsh
+# source ~/.config/zsh/geometry/geometry.zsh
 # ZSH_THEME="geometry" # robbyrussell, flazz, kardan
 
 # Set list of themes to pick from when loading at random
@@ -149,4 +149,14 @@ export PATH=~/bin:/home/nirlep/.local/share/pnpm:/home/nirlep/.local/bin:/home/n
 
 export HYPRSHOT_DIR=~/Screenshots/
 
+alias ls=lsd
 clear; echo ""; pfetch
+export PATH=$HOME/.nimble/bin:$PATH
+
+# bun completions
+[ -s "/home/nirlep/.bun/_bun" ] && source "/home/nirlep/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+eval "$(starship init zsh)"

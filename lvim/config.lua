@@ -46,10 +46,23 @@ table.insert(lvim.plugins, {
       vim.keymap.set("n", "<leader>-rp", function() vim.cmd(":CompetiTest receive problem") end)
       vim.keymap.set("n", "<leader>-t", function() vim.cmd(":CompetiTest run") end)
     end,
-  }
+  },
+  'alaviss/nim.nvim',
+  "ncm2/ncm2",
+  {
+    "ncm2/ncm2-d",
+  },
+  "roxma/nvim-yarp",
+  "landaire/deoplete-d",
+  "navarasu/onedark.nvim",
+  "lunarvim/Onedarker.nvim",
+  { 'rose-pine/neovim', name = 'rose-pine' },
+  "folke/tokyonight.nvim",
+  { "ziglang/zig.vim" }
 })
 
-lvim.transparent_window = true
+-- lvim.transparent_window = true
+-- lvim.colorscheme = "tokyonight-moon"
 lvim.colorscheme = "catppuccin-mocha"
 
 if vim.g.neovide then

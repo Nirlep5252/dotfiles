@@ -8,20 +8,21 @@
 window#waybar {
   /* you can also GTK3 CSS functions! */
   /* background-color: shade(@base, 0.9); */
-  background: transparent;
+  /* background: transparent; */
+  background: @base;
   /* border: 2px solid alpha(@text, 1); */
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .modules-right, .modules-center {
   padding: 0 10px;
 }
 .modules-left, .modules-center, .modules-right {
-  background-color: shade(@base, 0.9);
-  border-radius: 10px;
+  background-color: shade(@base, 1);
+  /* border-radius: 10px; */
 }
 
 #workspaces button.active {
   background: rgba(255, 255, 255, 0.3);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
