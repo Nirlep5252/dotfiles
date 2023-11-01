@@ -3,6 +3,7 @@
 export PATH=$HOME/.emacs.d/bin:$PATH
 alias doom=$HOME/.config/emacs/bin/doom
 alias myeyes="gammastep -l 0:0 -o -t 6500:6500 -b"
+alias upload="~/.config/scripts/upload.py"
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -12,7 +13,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # source ~/.config/zsh/geometry/geometry.zsh
-# ZSH_THEME="geometry" # robbyrussell, flazz, kardan
+# ZSH_THEME="robbyrussell" # robbyrussell, flazz, kardan
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -155,6 +156,10 @@ export PATH=$HOME/.nimble/bin:$PATH
 
 # bun completions
 [ -s "/home/nirlep/.bun/_bun" ] && source "/home/nirlep/.bun/_bun"
+
+# poetry autocompletions
+fpath+=~/.zfunc
+autoload -Uz compinit && compinit
 
 # bun
 export BUN_INSTALL="$HOME/.bun"

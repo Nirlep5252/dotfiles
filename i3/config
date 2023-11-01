@@ -213,6 +213,8 @@ bindsym Mod4+shift+x exec /home/$USER/.config/scripts/lock
 
 # Transparent Terminal
 exec_always picom &
+
+# 
 exec_always fcitx5 -d &
 exec_always polybar-msg cmd quit
 

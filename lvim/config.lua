@@ -66,7 +66,8 @@ table.insert(lvim.plugins, {
 lvim.colorscheme = "catppuccin-mocha"
 
 if vim.g.neovide then
-  vim.opt.guifont = "Cascadia Code:h11"
+  -- vim.opt.guifont = "Cascadia Code:h11"
+  vim.opt.guifont = "Rec Mono Linear:h16"
   -- vim.g.neovide_transparency = 0.8
   vim.g.neovide_background_color = "#282a36"
   vim.g.neovide_floating_blur_amount_x = 2.0
