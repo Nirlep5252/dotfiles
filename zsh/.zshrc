@@ -5,6 +5,8 @@ alias doom=$HOME/.config/emacs/bin/doom
 alias myeyes="gammastep -l 0:0 -o -t 6500:6500 -b"
 alias upload="~/.config/scripts/upload.py"
 
+alias wallpaper="swww img"
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
