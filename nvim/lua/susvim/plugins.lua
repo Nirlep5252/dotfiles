@@ -23,6 +23,50 @@ require("lazy").setup({
 
   -- treesitter
   "nvim-treesitter/nvim-treesitter",
+  "p00f/nvim-ts-rainbow",
+  "nvim-treesitter/playground",
+  {
+    "nvim-treesitter/nvim-treesitter-textobjects",
+    config = function ()
+      require("nvim-treesitter.configs").setup({
+        textobjects = {
+          swap = {
+            enable = true,
+            swap_next = {
+              ["<leader>a"] = "@parameter.inner",
+            },
+            swap_previous = {
+              ["<leader>A"] = "@parameter.inner",
+            },
+          },
+          select = {
+            enable = true,
+            lookahead = true,
+            keymaps = {
+              ["af"] = "@function.outer",
+              ["if"] = "@function.inner",
+              ["ac"] = "@class.outer",
+              ["ic"] = "@class.inner",
+              ["ab"] = "@block.outer",
+              ["ib"] = "@block.inner",
+              ["ap"] = "@parameter.outer",
+              ["ip"] = "@parameter.inner",
+              ["al"] = "@loop.outer",
+              ["il"] = "@loop.inner",
+              ["ai"] = "@conditional.outer",
+              ["ii"] = "@conditional.inner",
+            },
+            selection_modes = {
+              ["@parameter.outer"] = "v",
+              ["@function.outer"] = "V",
+              ["@class.outer"] = "<c-v>",
+            },
+            include_surrounding_whitespace = false,
+          },
+        }
+      })
+    end
+  },
 
   -- completions
   "hrsh7th/nvim-cmp",           -- completions main plugin
@@ -52,6 +96,24 @@ require("lazy").setup({
     end
   },
 
+  -- file tree
+  {
+    "nvim-tree/nvim-tree.lua",
+    version = "*",
+    lazy = false,
+    dependencies = {
+      "nvim-tree/nvim-web-devicons",
+    },
+    config = function()
+      require("nvim-tree").setup({
+        git = {
+          enable = true,
+          ignore = false,
+        },
+      })
+    end,
+  },
+
   -- rust btw
   'simrat39/rust-tools.nvim',
   {
@@ -68,4 +130,62 @@ require("lazy").setup({
         })
     end,
   },
+
+  -- markdown preview
+  {
+    "iamcco/markdown-preview.nvim",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "cd app && bun install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
+
+  -- comments
+  {
+    'numToStr/Comment.nvim',
+    opts = {
+      -- add any options here
+    },
+    lazy = false,
+    config = function ()
+      require("Comment").setup({
+        toggler = {
+          line = "<leader>/",
+          block = "<leader>?"
+        },
+        opleader = {
+          line = "<leader>/",
+          block = "<leader>?",
+        },
+      })
+    end
+  },
+
+  -- competitive programming
+  {
+    'xeluxee/competitest.nvim',
+    dependencies = 'MunifTanjim/nui.nvim',
+    config = function() require('competitest').setup() end,
+  },
+  {
+    "Dhanus3133/LeetBuddy.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    config = function()
+      require("leetbuddy").setup({
+        language = "py"
+      })
+    end,
+    keys = {
+      { "<leader>-lq", "<cmd>LBQuestions<cr>", desc = "List Questions" },
+      { "<leader>-ll", "<cmd>LBQuestion<cr>", desc = "View Question" },
+      { "<leader>-lr", "<cmd>LBReset<cr>", desc = "Reset Code" },
+      { "<leader>-lt", "<cmd>LBTest<cr>", desc = "Run Code" },
+      { "<leader>-ls", "<cmd>LBSubmit<cr>", desc = "Submit Code" },
+    },
+  }
 })

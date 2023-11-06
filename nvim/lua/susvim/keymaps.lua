@@ -14,7 +14,7 @@ k("n", "<C-k>", "<C-w>k", opts)
 k("n", "<C-l>", "<C-w>l", opts)
 
 -- Explorer
-k("n", "<leader>e", ":Lex 30<cr>", opts)
+k("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Resize with arrows
 k("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -37,3 +37,9 @@ k("v", "p", '"_dP', opts)
 -- k("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
 k("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 k("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
+
+-- Competitive programmin      
+k("n", "<leader>-rt", ":CompetiTest receive testcases<CR>", opts)
+k("n", "<leader>-rc", ":CompetiTest receive contest<CR>", opts)
+k("n", "<leader>-rp", ":CompetiTest receive problem<CR>", opts)
+k("n", "<leader>-t", ":CompetiTest run<CR>", opts)
