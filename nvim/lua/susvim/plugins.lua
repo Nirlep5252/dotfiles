@@ -17,6 +17,13 @@ require("lazy").setup({
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   "nvim-lua/plenary.nvim",
 
+  -- telescope
+  "nvim-telescope/telescope.nvim",
+  "nvim-telescope/telescope-media-files.nvim",
+
+  -- treesitter
+  "nvim-treesitter/nvim-treesitter",
+
   -- completions
   "hrsh7th/nvim-cmp",           -- completions main plugin
   "hrsh7th/cmp-buffer",         -- buffer completions
@@ -47,4 +54,18 @@ require("lazy").setup({
 
   -- rust btw
   'simrat39/rust-tools.nvim',
+  {
+    'saecki/crates.nvim',
+    tag = 'v0.4.0',
+    dependencies = { 'nvim-lua/plenary.nvim' },
+    event = { 'BufRead Cargo.toml' },
+    config = function()
+        require('crates').setup({
+          null_ls = {
+            enabled = true,
+            name = "crates.nvim",
+          }
+        })
+    end,
+  },
 })

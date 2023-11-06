@@ -6,4 +6,4 @@ end
 require("susvim.lsp.mason")
 require("susvim.lsp.handlers").setup()
 require("susvim.lsp.null-ls")
-require("susvim.lsp.rust")
+-- require("susvim.lsp.rust")

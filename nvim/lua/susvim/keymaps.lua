@@ -32,3 +32,8 @@ k("v", ">", ">gv", opts)
 
 -- Fix paste
 k("v", "p", '"_dP', opts)
+
+-- Telescope
+-- k("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
+k("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+k("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)

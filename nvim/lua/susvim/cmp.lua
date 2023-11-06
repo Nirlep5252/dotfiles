@@ -42,7 +42,7 @@ local kind_icons = {
   Event = "",
   Operator = "",
   TypeParameter = "󰉺",
-  CmpItemKindCopilot = "✧",
+  Copilot = "✧",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -118,6 +118,7 @@ cmp.setup {
     { name = "copilot" },
     { name = "nvim_lsp" },
     { name = "nvim_lua" },
+    { name = "crates" },
     { name = "luasnip" },
     { name = "path" },
     { name = "buffer" },
