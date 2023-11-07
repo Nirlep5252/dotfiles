@@ -17,6 +17,10 @@ require("lazy").setup({
   { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   "nvim-lua/plenary.nvim",
 
+  -- buffers
+  "akinsho/bufferline.nvim",
+  "moll/vim-bbye",
+
   -- telescope
   "nvim-telescope/telescope.nvim",
   "nvim-telescope/telescope-media-files.nvim",
@@ -218,4 +222,7 @@ require("lazy").setup({
     "chrisgrieser/nvim-puppeteer",
     lazy = false, -- plugin lazy-loads itself. Can also load on filetypes.
   },
+
+  -- bufferline
+  -- TODO
 })

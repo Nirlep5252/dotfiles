@@ -47,3 +47,6 @@ k("n", "<leader>-t", ":CompetiTest run<CR>", opts)
 -- Git signs
 k("n", "<leader>ggp", ":Gitsigns preview_hunk<CR>", opts)
 k("n", "<leader>ggd", ":Gitsigns diffthis<CR>", opts)
+
+-- buffers
+k("n", "<leader>c", ":Bdelete<CR>", opts)
