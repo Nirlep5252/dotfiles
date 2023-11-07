@@ -1,5 +1,7 @@
 # Ignore everything
 /*
+/waypaper/.cache
+*.out
 
 !.gitignore
 !.gitmodules
