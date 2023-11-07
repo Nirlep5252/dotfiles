@@ -37,6 +37,13 @@ require("lazy").setup({
 			-- refer to the configuration section below
 		},
 	},
+	{
+		"goolord/alpha-nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("alpha").setup(require("alpha.themes.startify").config)
+		end,
+	},
 
 	-- telescope
 	"nvim-telescope/telescope.nvim",
