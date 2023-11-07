@@ -4,6 +4,7 @@ export PATH=$HOME/.emacs.d/bin:$PATH
 alias doom=$HOME/.config/emacs/bin/doom
 alias myeyes="gammastep -l 0:0 -o -t 6500:6500 -b"
 alias upload="~/.config/scripts/upload.py"
+alias lofi="mpv 'https://www.youtube.com/watch?v=4xDzrJKXOOY&pp=ygUPbG9maSBjeWJlcnB1bmsg' --vo=kitty --profile=sw-fast"
 
 export EDITOR=nvim
 export VISUAL=nvim

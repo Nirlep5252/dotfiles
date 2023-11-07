@@ -43,3 +43,7 @@ k("n", "<leader>-rt", ":CompetiTest receive testcases<CR>", opts)
 k("n", "<leader>-rc", ":CompetiTest receive contest<CR>", opts)
 k("n", "<leader>-rp", ":CompetiTest receive problem<CR>", opts)
 k("n", "<leader>-t", ":CompetiTest run<CR>", opts)
+
+-- Git signs
+k("n", "<leader>ggp", ":Gitsigns preview_hunk<CR>", opts)
+k("n", "<leader>ggd", ":Gitsigns diffthis<CR>", opts)

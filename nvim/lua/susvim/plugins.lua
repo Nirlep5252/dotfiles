@@ -187,5 +187,35 @@ require("lazy").setup({
       { "<leader>-lt", "<cmd>LBTest<cr>", desc = "Run Code" },
       { "<leader>-ls", "<cmd>LBSubmit<cr>", desc = "Submit Code" },
     },
-  }
+  },
+
+  -- git stuff
+  "lewis6991/gitsigns.nvim",
+
+  -- learning neovim
+  -- {
+  --   "m4xshen/hardtime.nvim",
+  --   dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+  --   opts = {},
+  --   config = function()
+  --     require("hardtime").setup()
+  --   end
+  -- },
+
+  -- autotags for html and stuff
+  {
+    "windwp/nvim-ts-autotag",
+    config = function()
+      require("nvim-ts-autotag").setup()
+    end
+  },
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {} -- this is equalent to setup({}) function
+  },
+  {
+    "chrisgrieser/nvim-puppeteer",
+    lazy = false, -- plugin lazy-loads itself. Can also load on filetypes.
+  },
 })

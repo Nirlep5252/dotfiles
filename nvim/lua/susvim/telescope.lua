@@ -95,7 +95,12 @@ telescope.setup {
         "-HI",
         "--strip-cwd-prefix",
       }
-    }
+    },
+    -- live_grep = {
+    --   additional_args = function(opts)
+    --     return {"--hidden", "--no_ignore", "--no-ignore", "--noignore"}
+    --   end
+    -- }
    },
   extensions = {
     media_files = {

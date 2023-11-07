@@ -6,5 +6,6 @@ require("susvim.copilot")
 require("susvim.lsp")
 require("susvim.telescope")
 require("susvim.treesitter")
+require("susvim.gitsigns")
 
 vim.cmd("colorscheme catppuccin")
