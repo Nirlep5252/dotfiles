@@ -1,3 +1,15 @@
-### rice moment:
+# My configuration files :)
 
-https://github.com/Nirlep5252/dotfiles/assets/70529587/625a7ad1-fa67-4020-b469-acbee0137687
+## Preview
+
+todo
+
+## Stuff I currently use
+
+- [dunst](https://github.com/dunst-project/dunst) - notifications
+- [Hyprland](https://github.com/hyprwm/Hyprland) - window manager
+- [kitty](https://github.com/kovidgoyal/kitty) - terminal emulator
+- [neofetch](https://github.com/dylanaraps/neofetch) - cool stuff
+- [neovide](https://github.com/neovide/neovide) - neovim gui client
+- [nvim](https://github.com/neovim/neovim) - good editor
+- [waybar](https://github.com/Alexays/Waybar) - bar i use to see stuff
