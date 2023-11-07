@@ -1,16 +1,16 @@
 local servers = {
-  "lua_ls",
+	"lua_ls",
 	"pyright",
 	"jsonls",
-  "rust_analyzer",
-  "tsserver",
-  "jdtls",
-  "tailwindcss",
-  "ruff_lsp",
-  "eslint",
-  "clangd",
-  "nimls",
-  "cssls",
+	"rust_analyzer",
+	"tsserver",
+	"jdtls",
+	"tailwindcss",
+	"ruff_lsp",
+	"eslint",
+	"clangd",
+	"nimls",
+	"cssls",
 }
 
 local settings = {

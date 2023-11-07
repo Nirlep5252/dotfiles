@@ -1,5 +1,5 @@
-local opts = { noremap = true, silent = true, }
-local term_opts = { silent = true, }
+local opts = { noremap = true, silent = true }
+local term_opts = { silent = true }
 local k = vim.api.nvim_set_keymap
 
 -- Leader key
@@ -35,10 +35,15 @@ k("v", "p", '"_dP', opts)
 
 -- Telescope
 -- k("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-k("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+k(
+	"n",
+	"<leader>f",
+	"<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>",
+	opts
+)
 k("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
--- Competitive programmin      
+-- Competitive programmin
 k("n", "<leader>-rt", ":CompetiTest receive testcases<CR>", opts)
 k("n", "<leader>-rc", ":CompetiTest receive contest<CR>", opts)
 k("n", "<leader>-rp", ":CompetiTest receive problem<CR>", opts)

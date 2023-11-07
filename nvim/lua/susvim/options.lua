@@ -35,8 +35,8 @@ o.scrolloff = 8
 o.sidescrolloff = 8
 o.guifont = "rec mono casual:h12"
 
-o.shortmess:append "c"
+o.shortmess:append("c")
 
-vim.cmd "set whichwrap+=<,>,[,],h,l"
-vim.cmd [[set formatoptions-=cro]]
-vim.cmd [[set iskeyword+=-]]
+vim.cmd("set whichwrap+=<,>,[,],h,l")
+vim.cmd([[set formatoptions-=cro]])
+vim.cmd([[set iskeyword+=-]])
