@@ -1,0 +1,8 @@
+require("susvim.plugins.bufferline")
+require("susvim.plugins.cmp")
+require("susvim.plugins.copilot")
+require("susvim.plugins.gitsigns")
+require("susvim.plugins.telescope")
+require("susvim.plugins.textobjects")
+require("susvim.plugins.treesitter")
+require("susvim.plugins.lualine")

@@ -1,12 +1,6 @@
 require("susvim.options")
 require("susvim.keymaps")
 require("susvim.plugins")
-require("susvim.cmp")
-require("susvim.copilot")
-require("susvim.lsp")
-require("susvim.telescope")
-require("susvim.treesitter")
-require("susvim.gitsigns")
-require("susvim.bufferline")
+require("susvim.plugins.settings")
 
 vim.cmd("colorscheme catppuccin")
