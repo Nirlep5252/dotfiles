@@ -1,6 +1,6 @@
 require("susvim.plugins.bufferline")
-require("susvim.plugins.cmp")
 require("susvim.plugins.copilot")
+require("susvim.plugins.cmp")
 require("susvim.plugins.gitsigns")
 require("susvim.plugins.telescope")
 require("susvim.plugins.textobjects")
