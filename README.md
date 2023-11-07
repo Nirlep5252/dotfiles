@@ -2,7 +2,7 @@
 
 ## Preview
 
-todo
+https://github.com/Nirlep5252/dotfiles/assets/70529587/7ca2cdc3-477d-485a-82be-84cda5058263
 
 ## Stuff I currently use
 
