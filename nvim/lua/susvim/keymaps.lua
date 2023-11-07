@@ -49,4 +49,7 @@ k("n", "<leader>ggp", ":Gitsigns preview_hunk<CR>", opts)
 k("n", "<leader>ggd", ":Gitsigns diffthis<CR>", opts)
 
 -- buffers
-k("n", "<leader>c", ":Bdelete<CR>", opts)
+k("n", "<leader>bc", ":Bdelete<CR>", opts)
+
+-- format
+k("n", "<leader>lf", ":lua vim.lsp.buf.format()<CR>", opts)

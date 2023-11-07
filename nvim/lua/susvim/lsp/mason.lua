@@ -6,6 +6,11 @@ local servers = {
   "tsserver",
   "jdtls",
   "tailwindcss",
+  "ruff_lsp",
+  "eslint",
+  "clangd",
+  "nimls",
+  "cssls",
 }
 
 local settings = {
