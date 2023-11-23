@@ -35,4 +35,4 @@ i3lock \
 --date-str="%A, %Y-%m-%d"    \
 # --timefont="Cascadia Code"   \
 # --datefont="Cascadia Code"   \
---keylayout 1                \
+# --keylayout 1                \
