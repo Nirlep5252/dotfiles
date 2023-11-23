@@ -96,6 +96,9 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+Escape focus child
 
+# lock screen
+bindsym $mod+Shift+x exec ~/.config/scripts/lock
+
 # Second monitor
 set $monitor2 HDMI-1-0
 set $monitor1 eDP-1
