@@ -15,7 +15,7 @@
 !zsh
 !rofi
 # !polybar
-!picom/picom.conf
+!picom
 !neofetch/config.conf
 !kitty
 !neovide
