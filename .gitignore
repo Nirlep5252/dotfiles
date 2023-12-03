@@ -7,7 +7,7 @@
 !.gitmodules
 !README.md
 !alacritty/alacritty.yml
-!i3/config
+!i3
 !i3status/i3status.conf
 !i3blocks/i3blocks.conf
 !scripts
@@ -17,7 +17,7 @@
 # !polybar
 !picom/picom.conf
 !neofetch/config.conf
-!kitty/kitty.conf
+!kitty
 !neovide
 !hypr
 !waybar

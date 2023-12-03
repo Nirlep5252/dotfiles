@@ -253,14 +253,27 @@ bindsym XF86AudioPrev exec playerctl previous
 # Zoomer boomer tsoding moment
 bindsym $mod+Shift+z exec boomer
 
+# Screenshot uwu
+bindsym $mod+Shift+s exec /home/nirlep/.config/scripts/screenshot.sh
+
 exec_always xinput --set-prop "pointer:Logitech G304" "libinput Accel Speed" 0
+exec_always xinput --set-prop "pointer:DELL0B5E:00 04F3:317E Touchpad" "libinput Accel Speed" 0
 
 set $ctmVal 1.5
 exec_always xinput set-prop "pointer:Logitech G304" "Coordinate Transformation Matrix" 1, 0, 0, 0, 1, 0, 0, 0, $ctmVal
 
 
-exec_always /usr/lib/polkit-kde-authentication-agent-1
+exec_always lxpolkit
 exec_always nm-applet
 
 for_window [class="Gnome-screenshot"] floating enable
+
+# Gaps
+gaps inner 0
+gaps outer 0
+
+default_border pixel 1
+default_floating_border pixel 1
+
+# exec picom &
 
