@@ -9,7 +9,7 @@ configs.setup({
 		additional_vim_regex_highlighting = true,
 	},
 	rainbow = {
-		enable = false,
+		-- enable = true,
 		extended_mode = true,
 		max_file_lines = nil,
 	},

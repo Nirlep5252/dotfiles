@@ -6,10 +6,10 @@
 !.gitignore
 !.gitmodules
 !README.md
-!alacritty/alacritty.yml
+!alacritty
 !i3
-!i3status/i3status.conf
-!i3blocks/i3blocks.conf
+!i3status
+!i3blocks
 !scripts
 !lvim
 !zsh

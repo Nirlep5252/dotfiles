@@ -15,15 +15,22 @@ vim.opt.rtp:prepend(lazypath)
 -- Plugins go brrr
 require("lazy").setup({
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-	"nvim-lua/plenary.nvim",
 	{
-		"lukas-reineke/indent-blankline.nvim",
-		main = "ibl",
-		opts = {},
+		"AlphaTechnolog/pywal.nvim",
+		name = "pywal",
 		config = function()
-			require("ibl").setup()
+			require("pywal").setup()
 		end,
 	},
+	"nvim-lua/plenary.nvim",
+	-- {
+	-- 	"lukas-reineke/indent-blankline.nvim",
+	-- 	main = "ibl",
+	-- 	opts = {},
+	-- 	config = function()
+	-- 		require("ibl").setup()
+	-- 	end,
+	-- },
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",

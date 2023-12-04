@@ -164,5 +164,5 @@ bufferline.setup({
 	--     guibg = { attribute = "bg", highlight = "Normal" },
 	--   },
 	-- },
-	highlights = require("catppuccin.groups.integrations.bufferline").get(),
+	-- highlights = require("catppuccin.groups.integrations.bufferline").get(),
 })

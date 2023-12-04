@@ -15,7 +15,7 @@ set $mod Mod4
 # is used in the bar {} block below.
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 8
+font pango:Nova 10
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -163,13 +163,13 @@ bindsym $mod+0 workspace $ws10
 # switch to workspace monitor2
 bindsym Mod1+1 workspace $ws11
 bindsym Mod1+2 workspace $ws12
-bindsym Mod1+3 workspace $ws13 
-bindsym Mod1+4 workspace $ws14 
-bindsym Mod1+5 workspace $ws15 
-bindsym Mod1+6 workspace $ws16 
-bindsym Mod1+7 workspace $ws17 
-bindsym Mod1+8 workspace $ws18 
-bindsym Mod1+9 workspace $ws19 
+bindsym Mod1+3 workspace $ws13
+bindsym Mod1+4 workspace $ws14
+bindsym Mod1+5 workspace $ws15
+bindsym Mod1+6 workspace $ws16
+bindsym Mod1+7 workspace $ws17
+bindsym Mod1+8 workspace $ws18
+bindsym Mod1+9 workspace $ws19
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $ws1
@@ -228,13 +228,39 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# Colors
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+set_from_resource $dark i3wm.color0 #000000
+
+# class                 border  backgr. text indicator child_border
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       #ffffff00
+client.unfocused        $bg     $bg     $fg  $bg       #ffffff00
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+client.background       $bg
+
+# i3status, i3blocks
 bar {
-        status_command i3status
+  # i3bar_command i3bar --transparency
+  padding 0px 4px
+  status_command i3blocks SCRIPT_DIR="/usr/lib/i3blocks"
+  tray_output primary
+  separator_symbol "|"
+  colors {
+    background $dark
+    statusline $fg
+    separator $fg
+    focused_workspace $bg $bg $fg
+    inactive_workspace $dark $dark $fg
+  }
 }
-# Wallpaper
-exec_always nitrogen --restore &
+
+# Wallpaper/Theme
+# exec_always nitrogen --restore &
+exec_always wal -R
+bindsym $mod+Shift+W exec /home/nirlep/.config/scripts/random-wal.sh
 
 # Pipewire-pulse
 bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
@@ -262,18 +288,19 @@ exec_always xinput --set-prop "pointer:DELL0B5E:00 04F3:317E Touchpad" "libinput
 set $ctmVal 1.5
 exec_always xinput set-prop "pointer:Logitech G304" "Coordinate Transformation Matrix" 1, 0, 0, 0, 1, 0, 0, 0, $ctmVal
 
-
 exec_always lxpolkit
 exec_always nm-applet
 
 for_window [class="Gnome-screenshot"] floating enable
 
 # Gaps
-gaps inner 0
-gaps outer 0
+gaps inner 10
+gaps outer 5
 
-default_border pixel 1
-default_floating_border pixel 1
+default_border pixel 2
+default_floating_border pixel 2
 
-# exec picom &
+# exec_always killall polybar
+# exec_always polybar &
 
+# exec_always picom
