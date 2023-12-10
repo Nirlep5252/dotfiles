@@ -33,7 +33,7 @@ o.signcolumn = "yes"
 o.wrap = true
 o.scrolloff = 8
 o.sidescrolloff = 8
-o.guifont = "monaspace neon:h12"
+o.guifont = "Nova:h12"
 
 o.shortmess:append("c")
 

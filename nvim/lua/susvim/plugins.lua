@@ -233,4 +233,6 @@ require("lazy").setup({
 	},
 	"akinsho/bufferline.nvim",
 	"moll/vim-bbye",
+
+  "fladson/vim-kitty",
 })
