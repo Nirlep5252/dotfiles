@@ -157,7 +157,8 @@ export PATH=~/bin:/home/nirlep/.local/share/pnpm:/home/nirlep/.local/bin:/home/n
 export HYPRSHOT_DIR=~/Screenshots/
 
 alias ls=lsd
-clear; echo ""; pfetch
+# clear; echo ""; pfetch
+pfetch
 export PATH=$HOME/.nimble/bin:$PATH
 
 # bun completions
