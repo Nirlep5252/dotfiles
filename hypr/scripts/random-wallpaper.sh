@@ -15,5 +15,5 @@ swww img ${DIR}/${RANDOMPICS}\
   --transition-step 255
 
 wal -i ${DIR}/${RANDOMPICS}
-
 pywalfox update
+~/.config/mako/update-theme.sh
