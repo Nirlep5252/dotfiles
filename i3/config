@@ -304,3 +304,4 @@ default_floating_border pixel 2
 # exec_always polybar &
 
 # exec_always picom
+exec_always dunst

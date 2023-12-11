@@ -35,6 +35,16 @@
             //"5": "",
             //"6": "󰙯",
             //"7": "󰎈",
+            "1": "web",
+            "2": "dev",
+            "3": "pain",
+            "4": "work",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9",
+            "10": "sus",
             "urgent": "",
             "default": ""
         },
@@ -94,8 +104,8 @@
         "on-click": "pavucontrol &",
         "on-click-right": "pamixer -t",
         "scroll-step": 5,
-        "on-scroll-up": "~/.config/waybar/scripts/volume.sh --inc",
-        "on-scroll-down": "~/.config/waybar/scripts/volume.sh --dec"
+        "on-scroll-up": "pactl set-sink-volume @DEFAULT_SINK@ +5%",
+        "on-scroll-down": "pactl set-sink-volume @DEFAULT_SINK@ -5%"
     },
     "battery": {
         "interval": 60,
