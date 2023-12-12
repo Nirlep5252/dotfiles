@@ -18,4 +18,4 @@ for color_name in "${!colors[@]}"; do
 done
 
 makoctl reload
-notify-send "Updated mako theme!"
+# notify-send "Updated mako theme!"
