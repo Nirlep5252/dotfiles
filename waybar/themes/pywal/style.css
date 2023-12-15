@@ -149,7 +149,7 @@ window#waybar.hidden {
     color: @color13;
     /* border-left: none; */
     /* border-right: none; */
-    border-radius: 0px 16px 16px 0px;
+    border-radius: 16px 16px 16px 16px;
 }
 
 #pulseaudio.muted {
