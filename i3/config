@@ -294,11 +294,11 @@ exec_always nm-applet
 for_window [class="Gnome-screenshot"] floating enable
 
 # Gaps
-gaps inner 10
-gaps outer 5
+#gaps inner 10
+#gaps outer 5
 
-default_border pixel 2
-default_floating_border pixel 2
+#default_border pixel 2
+#default_floating_border pixel 2
 
 # exec_always killall polybar
 # exec_always polybar &
