@@ -19,7 +19,7 @@ require("lazy").setup({
 		"AlphaTechnolog/pywal.nvim",
 		name = "pywal",
 		config = function()
-			require("pywal").setup()
+			-- require("pywal").setup()
 		end,
 	},
 	"nvim-lua/plenary.nvim",

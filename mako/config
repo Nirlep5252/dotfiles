@@ -1,17 +1,17 @@
 sort=-time
 layer=overlay
-background-color=#04071589
+background-color=#0B0B1689
 width=300
 height=110
 border-size=2
-border-color=#666665
+border-color=#598BC1
 border-radius=15
 icons=0
 max-icon-size=64
 default-timeout=5000
 ignore-timeout=1
 font=monospace 14
-text-color=#bcb2ad
+text-color=#d9ced7
 
 [urgency=low]
 border-color=#cccccc

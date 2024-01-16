@@ -37,7 +37,6 @@ shuffle
 
 # set wallpapers in incremental order
 index=0
-gsettings set org.gnome.desktop.background picture-uri "${wallpapers[$index]}"
 wal -i "${wallpapers[$index]}"
 # index is maxing out, so reset it
 if [ $(($index+1)) -eq $wallpapers_size ]
