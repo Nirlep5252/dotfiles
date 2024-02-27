@@ -15,6 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 -- Plugins go brrr
 require("lazy").setup({
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+  { "savq/melange-nvim" },
 	{
 		"AlphaTechnolog/pywal.nvim",
 		name = "pywal",

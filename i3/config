@@ -227,20 +227,20 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
-
-# Colors
-set_from_resource $fg i3wm.color7 #f0f0f0
-set_from_resource $bg i3wm.color2 #f0f0f0
-set_from_resource $dark i3wm.color0 #000000
-
-# class                 border  backgr.       text  indicator child_border
-client.focused          $bg     $bg           $fg   $bg       $bg
-client.focused_inactive $bg     #ffffff00     $fg   $bg       #ffffff00
-client.unfocused        $bg     #ffffff00     $fg   $bg       #ffffff00
-client.urgent           $bg     $bg           $fg   $bg       $bg
-client.placeholder      $bg     $bg           $fg   $bg       $bg
-client.background       $bg
-
+#
+# # Colors
+# set_from_resource $fg i3wm.color7 #f0f0f0
+# set_from_resource $bg i3wm.color2 #f0f0f0
+# set_from_resource $dark i3wm.color0 #000000
+#
+# # class                 border  backgr.       text  indicator child_border
+# client.focused          $bg     $bg           $fg   $bg       $bg
+# client.focused_inactive $bg     #ffffff00     $fg   $bg       #ffffff00
+# client.unfocused        $bg     #ffffff00     $fg   $bg       #ffffff00
+# client.urgent           $bg     $bg           $fg   $bg       $bg
+# client.placeholder      $bg     $bg           $fg   $bg       $bg
+# client.background       $bg
+#
 # i3status, i3blocks
 bar {
   # i3bar_command i3bar --transparency
@@ -248,13 +248,13 @@ bar {
   status_command i3blocks SCRIPT_DIR="/usr/lib/i3blocks"
   tray_output primary
   separator_symbol "|"
-  colors {
-    background $dark
-    statusline $fg
-    separator $fg
-    focused_workspace $bg $bg $fg
-    inactive_workspace $dark $dark $fg
-  }
+  # colors {
+  #   background $dark
+  #   statusline $fg
+  #   separator $fg
+  #   focused_workspace $bg $bg $fg
+  #   inactive_workspace $dark $dark $fg
+  # }
 }
 
 # Wallpaper/Theme
