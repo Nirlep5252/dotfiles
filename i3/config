@@ -27,7 +27,7 @@ font pango:Nova 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec wezterm
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -258,8 +258,8 @@ bar {
 }
 
 # Wallpaper/Theme
-# exec_always nitrogen --restore &
-exec_always wal -R
+exec_always nitrogen --restore &
+# exec_always wal -R
 bindsym $mod+Shift+W exec /home/nirlep/.config/scripts/random-wal.sh
 
 # Pipewire-pulse
@@ -294,11 +294,11 @@ exec_always nm-applet
 for_window [class="Gnome-screenshot"] floating enable
 
 # Gaps
-#gaps inner 10
-#gaps outer 5
+gaps inner 6
+gaps outer 3
 
-#default_border pixel 2
-#default_floating_border pixel 2
+default_border pixel 2
+default_floating_border pixel 2
 
 # exec_always killall polybar
 # exec_always polybar &
