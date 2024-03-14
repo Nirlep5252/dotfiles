@@ -14,25 +14,18 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Plugins go brrr
 require("lazy").setup({
-  { "catppuccin/nvim",           name = "catppuccin", priority = 1000 },
+  { "catppuccin/nvim",       name = "catppuccin", priority = 1000 },
   { "navarasu/onedark.nvim", priority = 1000 },
   { "savq/melange-nvim" },
+  "nvim-lua/plenary.nvim",
   {
-    "AlphaTechnolog/pywal.nvim",
-    name = "pywal",
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    opts = {},
     config = function()
-      -- require("pywal").setup()
+      require("ibl").setup()
     end,
   },
-  "nvim-lua/plenary.nvim",
-  -- {
-  -- 	"lukas-reineke/indent-blankline.nvim",
-  -- 	main = "ibl",
-  -- 	opts = {},
-  -- 	config = function()
-  -- 		require("ibl").setup()
-  -- 	end,
-  -- },
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
@@ -40,11 +33,7 @@ require("lazy").setup({
       vim.o.timeout = true
       vim.o.timeoutlen = 300
     end,
-    opts = {
-      -- your configuration comes here
-      -- or leave it empty to use the default settings
-      -- refer to the configuration section below
-    },
+    opts = {},
   },
   {
     "goolord/alpha-nvim",
@@ -201,16 +190,6 @@ require("lazy").setup({
   -- git stuff
   "lewis6991/gitsigns.nvim",
 
-  -- learning neovim
-  -- {
-  --   "m4xshen/hardtime.nvim",
-  --   dependencies = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-  --   opts = {},
-  --   config = function()
-  --     require("hardtime").setup()
-  --   end
-  -- },
-
   -- autotags for html and stuff
   {
     "windwp/nvim-ts-autotag",
@@ -229,11 +208,11 @@ require("lazy").setup({
   },
 
   -- UI
-  {
-    "nvim-lualine/lualine.nvim",
-    requires = { "nvim-tree/nvim-web-devicons", opt = true },
-  },
-  "akinsho/bufferline.nvim",
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   requires = { "nvim-tree/nvim-web-devicons", opt = true },
+  -- },
+  -- "akinsho/bufferline.nvim",
   "moll/vim-bbye",
 
   "fladson/vim-kitty",

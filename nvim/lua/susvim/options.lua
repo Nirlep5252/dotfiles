@@ -33,7 +33,7 @@ o.signcolumn = "yes"
 o.wrap = true
 o.scrolloff = 8
 o.sidescrolloff = 8
-o.guifont = "JetBrains Mono:h14"
+o.guifont = "GeistMono Nerd Font Mono:h14"
 
 o.shortmess:append("c")
 
