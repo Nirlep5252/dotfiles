@@ -26,6 +26,12 @@
     pkgs.networkmanagerapplet
     pkgs.swayimg
     pkgs.python313
+    pkgs.gnumake
+    pkgs.cmake
+    pkgs.ninja
+    pkgs.glxinfo
+    pkgs.libGLU
+    pkgs.mesa
 
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }
