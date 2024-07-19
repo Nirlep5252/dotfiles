@@ -24,7 +24,7 @@
     pkgs.xfce.thunar
     pkgs.lxde.lxsession
     pkgs.networkmanagerapplet
-    pkgs.killall
+    pkgs.swayimg
 
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }

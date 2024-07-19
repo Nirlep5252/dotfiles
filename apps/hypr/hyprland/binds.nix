@@ -4,7 +4,7 @@
       "$mod, RETURN, exec, $terminal"
       "$mod SHIFT, Q, killactive"
       "$mod, SPACE, exec, $menu"
-      "$mod, L, exec, hyprlock"
+      "$mod SHIFT, X, exec, hyprlock"
       "$mod, F, fullscreen"
       "$mod SHIFT, E, exec, $fileManager"
       "$mod, E, togglesplit"

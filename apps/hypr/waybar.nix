@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ ... }:
 
 {
   programs.waybar = {
@@ -9,73 +9,73 @@
     };
     style = ''
       * {
-      font-family: "GeistMono Nerd Font";
-      font-size: 12pt;
-      font-weight: bold;
-      border-radius: 0px;
-      transition-property: background-color;
-      transition-duration: 0.5s;
+          font-family: "GeistMono Nerd Font";
+          font-size: 12pt;
+          font-weight: bold;
+          border-radius: 10px;
+          transition-property: background-color;
+          transition-duration: 0.5s;
       }
       @keyframes blink_red {
-      to {
-      background-color: rgb(242, 143, 173);
-      color: rgb(26, 24, 38);
-      }
+          to {
+              background-color: rgb(242, 143, 173);
+              color: rgb(26, 24, 38);
+          }
       }
       .warning, .critical, .urgent {
-      animation-name: blink_red;
-      animation-duration: 1s;
-      animation-timing-function: linear;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
+          animation-name: blink_red;
+          animation-duration: 1s;
+          animation-timing-function: linear;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
       }
       window#waybar {
-      background-color: transparent;
+          background-color: transparent;
       }
       window > box {
-      margin-left: 5px;
-      margin-right: 5px;
-      margin-top: 5px;
-      background-color: #3b4252;
+          margin-left: 10px;
+          margin-right: 10px;
+          margin-top: 10px;
+          background-color: #3b4252;
       }
       #workspaces {
-      padding-left: 0px;
-      padding-right: 4px;
+          padding-left: 0px;
+          padding-right: 4px;
       }
       #workspaces button {
-      padding-top: 5px;
-      padding-bottom: 5px;
-      padding-left: 6px;
-      padding-right: 6px;
-      color:#D8DEE9;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 6px;
+          padding-right: 6px;
+          color:#D8DEE9;
       }
       #workspaces button.active {
-      background-color: rgb(181, 232, 224);
-      color: rgb(26, 24, 38);
+          background-color: rgb(181, 232, 224);
+          color: rgb(26, 24, 38);
       }
       #workspaces button.urgent {
-      color: rgb(26, 24, 38);
+          color: rgb(26, 24, 38);
       }
       #workspaces button:hover {
-      background-color: #B38DAC;
-      color: rgb(26, 24, 38);
+          background-color: #B38DAC;
+          color: rgb(26, 24, 38);
       }
       tooltip {
-      /* background: rgb(250, 244, 252); */
-      background: #3b4253;
+          /* background: rgb(250, 244, 252); */
+          background: #3b4253;
       }
       tooltip label {
-      color: #E4E8EF;
+          color: #E4E8EF;
       }
       #custom-launcher {
-      font-size: 20px;
-      padding-left: 8px;
-      padding-right: 6px;
-      color: #7ebae4;
+          font-size: 20px;
+          padding-left: 8px;
+          padding-right: 6px;
+          color: #7ebae4;
       }
       #mode, #clock, #memory, #temperature,#cpu,#mpd, #custom-wall, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu, #custom-cava-internal {
-      padding-left: 10px;
-      padding-right: 10px;
+          padding-left: 10px;
+          padding-right: 10px;
       }
       /* #mode { */
       /* 	margin-left: 10px; */
@@ -83,64 +83,64 @@
       /*     color: rgb(26, 24, 38); */
       /* } */
       #memory {
-      color: #8EBBBA;
+          color: #8EBBBA;
       }
       #cpu {
-      color: #B38DAC;
+          color: #B38DAC;
       }
       #clock {
-      color: #E4E8EF;
+          color: #E4E8EF;
       }
       #custom-wall {
-      color: #B38DAC;
+          color: #B38DAC;
       }
       #temperature {
-      color: #80A0C0;
+          color: #80A0C0;
       }
       #backlight {
-      color: #A2BD8B;
+          color: #A2BD8B;
       }
       #pulseaudio {
-      color: #E9C98A;
+          color: #E9C98A;
       }
       #network {
-      color: #99CC99;
+          color: #99CC99;
       }
 
       #network.disconnected {
-      color: #CCCCCC;
+          color: #CCCCCC;
       }
       #battery.charging, #battery.full, #battery.discharging {
-      color: #CF876F;
+          color: #CF876F;
       }
       #battery.critical:not(.charging) {
-      color: #D6DCE7;
+          color: #D6DCE7;
       }
       #custom-powermenu {
-      color: #BD6069;
+          color: #BD6069;
       }
       #tray {
-      padding-right: 8px;
-      padding-left: 10px;
+          padding-left: 10px;
+          padding-right: 8px;
       }
       #tray menu {
-      background: #3b4252;
-      color: #DEE2EA;
+          background: #3b4252;
+          color: #DEE2EA;
       }
       #mpd.paused {
-      color: rgb(192, 202, 245);
-      font-style: italic;
+          color: rgb(192, 202, 245);
+          font-style: italic;
       }
       #mpd.stopped {
-      background: transparent;
+          background: transparent;
       }
       #mpd {
-      color: #E4E8EF;
+          color: #E4E8EF;
 
-      /* color: #c0caf5; */
+          /* color: #c0caf5; */
       }
       #custom-cava-internal{
-      font-family: "Hack Nerd Font" ;
+          font-family: "Hack Nerd Font" ;
       }
     '';
     settings = [{

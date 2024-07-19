@@ -6,11 +6,11 @@
     splash_offset = 2.0;
 
     preload = [
-      "~/Pictures/Wallpapers/mountains.jpg"
+      "~/Pictures/Wallpapers/cat.png"
     ];
 
     wallpaper = [
-      "eDP-1,~/Pictures/Wallpapers/mountains.jpg"
+      "eDP-1,~/Pictures/Wallpapers/cat.png"
     ];
   };
 }
