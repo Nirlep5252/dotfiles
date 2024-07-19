@@ -7,10 +7,11 @@
 
     preload = [
       "~/Pictures/Wallpapers/cat.png"
+      "~/Pictures/Wallpapers/nezuko-kamado-4k.jpg"
     ];
 
     wallpaper = [
-      "eDP-1,~/Pictures/Wallpapers/cat.png"
+      "eDP-1,~/Pictures/Wallpapers/nezuko-kamado-4k.jpg"
     ];
   };
 }

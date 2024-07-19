@@ -6,10 +6,6 @@
     "blueman-applet"
     "hyprpm reload -n"
     "lxpolkit"
-  ];
-
-  wayland.windowManager.hyprland.settings.exec = [
-    "pkill waybar"
     "waybar"
   ];
 }

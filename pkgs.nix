@@ -25,6 +25,7 @@
     pkgs.lxde.lxsession
     pkgs.networkmanagerapplet
     pkgs.swayimg
+    pkgs.python313
 
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }
