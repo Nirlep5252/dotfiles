@@ -30,8 +30,16 @@
     pkgs.cmake
     pkgs.ninja
     pkgs.glxinfo
+    pkgs.libGL
     pkgs.libGLU
     pkgs.mesa
+    pkgs.meson
+    pkgs.hwdata
+    pkgs.hyprcursor
+    pkgs.bun
+    pkgs.openssl
+    pkgs.nodejs_22
+    pkgs.nodePackages_latest.prisma
 
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }
