@@ -2,6 +2,7 @@
 
 {
   home.packages = [
+    pkgs.dconf
     pkgs.gcc
     pkgs.neovim
     pkgs.kitty
@@ -40,6 +41,8 @@
     pkgs.openssl
     pkgs.nodejs_22
     pkgs.nodePackages_latest.prisma
+    pkgs.cinnamon.nemo
+    pkgs.whitesur-cursors
 
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }

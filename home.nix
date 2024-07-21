@@ -24,6 +24,7 @@
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
+    ".icons/whitesur".source = "${pkgs.whitesur-cursors}/share/icons/WhiteSur-cursors";
   };
 
   home.sessionVariables = {
@@ -33,6 +34,22 @@
     PRISMA_QUERY_ENGINE_LIBRARY = "${pkgs.prisma-engines}/lib/libquery_engine.node";
     PRISMA_QUERY_ENGINE_BINARY = "${pkgs.prisma-engines}/bin/query-engine";
     PRISMA_SCHEMA_ENGINE_BINARY = "${pkgs.prisma-engines}/bin/schema-engine";
+  };
+
+  gtk.enable = true;
+
+  gtk.cursorTheme.package = pkgs.whitesur-cursors;
+  gtk.cursorTheme.name = "WhiteSur Cursors";
+
+  gtk.theme.package = pkgs.adw-gtk3;
+  gtk.theme.name = "adw-gtk3";
+
+  gtk.iconTheme.package = pkgs.whitesur-icon-theme;
+  gtk.iconTheme.name = "WhiteSur";
+
+  home.pointerCursor = {
+    name = "WhiteSur Cursors";
+    package = pkgs.whitesur-cursors;
   };
 
   # Let Home Manager install and manage itself.

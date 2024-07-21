@@ -13,8 +13,8 @@
     "$mod" = "SUPER";
 
     "$terminal" = "kitty";
-    "$menu" = "wofi --show drun";
-    "$fileManager" = "thunar";
+    "$menu" = "wofi --show run";
+    "$fileManager" = "nemo";
 
     "windowrulev2" = [
       "suppressevent maximize, class:.*"
