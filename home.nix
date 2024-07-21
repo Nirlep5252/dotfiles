@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -41,11 +41,19 @@
   gtk.cursorTheme.package = pkgs.whitesur-cursors;
   gtk.cursorTheme.name = "WhiteSur Cursors";
 
-  gtk.theme.package = pkgs.adw-gtk3;
-  gtk.theme.name = "adw-gtk3";
+  gtk.theme.package = pkgs.gnome.gnome-themes-extra;
+  gtk.theme.name = "Adwaita-dark";
 
   gtk.iconTheme.package = pkgs.whitesur-icon-theme;
   gtk.iconTheme.name = "WhiteSur";
+
+  # systemd.user.sessionVariables = config.home-manager.users.nirlep5252.home.sessionVariables;
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-schema = "prefer-dark";
+    };
+  };
 
   home.pointerCursor = {
     name = "WhiteSur Cursors";

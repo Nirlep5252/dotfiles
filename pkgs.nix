@@ -43,6 +43,7 @@
     pkgs.nodePackages_latest.prisma
     pkgs.cinnamon.nemo
     pkgs.whitesur-cursors
+    pkgs.luajitPackages.luarocks
 
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }
