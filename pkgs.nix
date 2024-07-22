@@ -48,6 +48,7 @@
     pkgs.zed-editor
     pkgs.xdg-utils
     pkgs.rose-pine-cursor
+    pkgs.libsForQt5.qt5.qtwayland
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas
@@ -62,6 +63,14 @@
       python-pkgs.pyperclip
       python-pkgs.plotly
       python-pkgs.pytesseract
+      python-pkgs.pytorch
+      python-pkgs.nltk
+      # python-pkgs.spacy
+      python-pkgs.wordcloud
+      python-pkgs.pyspellchecker
+      python-pkgs.gensim
+      python-pkgs.anyqt
+      python-pkgs.pyqt5
     ]))
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }

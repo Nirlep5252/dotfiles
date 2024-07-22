@@ -57,6 +57,9 @@
   gtk.iconTheme.package = pkgs.whitesur-icon-theme;
   gtk.iconTheme.name = "WhiteSur";
 
+  qt.enable = true;
+  qt.platformTheme = "gtk";
+
   # systemd.user.sessionVariables = config.home-manager.users.nirlep5252.home.sessionVariables;
 
   dconf.settings = {
