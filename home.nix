@@ -33,6 +33,8 @@
   # plain files is through 'home.file'.
   home.file = {
     ".icons/whitesur".source = "${pkgs.whitesur-cursors}/share/icons/WhiteSur-cursors";
+    ".icons/rose-pine".source = "${pkgs.rose-pine-cursor}/share/icons/BreezeX-RosePine-Linux";
+    ".icons/rose-pine-dawn".source = "${pkgs.rose-pine-cursor}/share/icons/BreezeX-RosePineDawn-Linux";
   };
 
   home.sessionVariables = {
@@ -47,7 +49,7 @@
   gtk.enable = true;
 
   gtk.cursorTheme.package = pkgs.whitesur-cursors;
-  gtk.cursorTheme.name = "WhiteSur Cursors";
+  gtk.cursorTheme.name = "rose-pine";
 
   gtk.theme.package = pkgs.gnome.gnome-themes-extra;
   gtk.theme.name = "Adwaita-dark";

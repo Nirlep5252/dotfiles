@@ -47,6 +47,7 @@
     pkgs.sway-contrib.grimshot
     pkgs.zed-editor
     pkgs.xdg-utils
+    pkgs.rose-pine-cursor
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas
