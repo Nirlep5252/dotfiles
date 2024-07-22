@@ -26,7 +26,6 @@
     pkgs.lxde.lxsession
     pkgs.networkmanagerapplet
     pkgs.swayimg
-    pkgs.python313
     pkgs.gnumake
     pkgs.cmake
     pkgs.ninja
@@ -44,7 +43,25 @@
     pkgs.cinnamon.nemo
     pkgs.whitesur-cursors
     pkgs.luajitPackages.luarocks
+    pkgs.tesseract
+    pkgs.sway-contrib.grimshot
+    pkgs.zed-editor
+    pkgs.xdg-utils
 
+    (pkgs.python3.withPackages (python-pkgs: [
+      python-pkgs.pandas
+      python-pkgs.requests
+      python-pkgs.jupyter
+      python-pkgs.jupyter_client
+      python-pkgs.pynvim
+      python-pkgs.ueberzug
+      python-pkgs.cairosvg
+      python-pkgs.pnglatex
+      python-pkgs.pillow
+      python-pkgs.pyperclip
+      python-pkgs.plotly
+      python-pkgs.pytesseract
+    ]))
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }
     )

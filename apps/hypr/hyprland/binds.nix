@@ -20,7 +20,7 @@
       "$mod SHIFT, j, movewindow, d"
 
       # Screenshots
-      "$mod SHIFT, S, exec, grim -g \"$(slurp -d)\" - | wl-copy"
+      "$mod SHIFT, S, exec, grimshot savecopy area \"/home/nirlep5252/Pictures/Screenshots/$(date).png\""
       "$mod, Tab, workspace, previous"
       "$mod, M, exit"
   ]
