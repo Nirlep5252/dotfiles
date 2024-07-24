@@ -49,6 +49,10 @@
     pkgs.xdg-utils
     pkgs.rose-pine-cursor
     pkgs.libsForQt5.qt5.qtwayland
+    pkgs.geist-font
+    pkgs.ripgrep
+    pkgs.dig
+    pkgs.ciscoPacketTracer8
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas
@@ -71,6 +75,7 @@
       python-pkgs.gensim
       python-pkgs.anyqt
       python-pkgs.pyqt5
+      python-pkgs.icecream
     ]))
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }

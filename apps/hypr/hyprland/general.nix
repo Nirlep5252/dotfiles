@@ -8,6 +8,7 @@
       pkgs.xdg-desktop-portal-gtk
     ];
   };
+  xdg.portal.config.common.default = "*";
 
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";

@@ -8,6 +8,7 @@
       "$mod, F, fullscreen"
       "$mod SHIFT, E, exec, $fileManager"
       "$mod, E, togglesplit"
+      "$mod, C, togglefloating"
 
       # Moving windows
       "$mod, h, movefocus, l"

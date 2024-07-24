@@ -58,7 +58,7 @@
   gtk.iconTheme.name = "WhiteSur";
 
   qt.enable = true;
-  qt.platformTheme = "gtk";
+  qt.platformTheme.name = "gtk";
 
   # systemd.user.sessionVariables = config.home-manager.users.nirlep5252.home.sessionVariables;
 
