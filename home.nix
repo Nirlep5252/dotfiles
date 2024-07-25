@@ -49,7 +49,7 @@
   gtk.enable = true;
 
   gtk.cursorTheme.package = pkgs.whitesur-cursors;
-  gtk.cursorTheme.name = "rose-pine";
+  gtk.cursorTheme.name = "rose-pine-dawn";
 
   gtk.theme.package = pkgs.gnome.gnome-themes-extra;
   gtk.theme.name = "Adwaita-dark";
