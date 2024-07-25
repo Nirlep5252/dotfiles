@@ -53,6 +53,9 @@
     pkgs.ripgrep
     pkgs.dig
     pkgs.ciscoPacketTracer8
+    pkgs.dooit
+    pkgs.gtk2
+    pkgs.brave
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas
@@ -76,6 +79,7 @@
       python-pkgs.anyqt
       python-pkgs.pyqt5
       python-pkgs.icecream
+      (python-pkgs.opencv4.override { enableGtk2 = true; })
     ]))
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }
