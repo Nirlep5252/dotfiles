@@ -12,6 +12,7 @@
   nixpkgs = {
     config = {
       allowUnfree = true;
+      cudaSupport = true;
     };
   };
 
@@ -21,6 +22,7 @@
     ./apps/_import.nix
   ];
 
+  xdg.mimeApps.enable = true;
   xdg.mimeApps.defaultApplications = {
     "text/html" = "firefox.desktop";
     "x-scheme-handler/http" = "firefox.desktop";
@@ -39,6 +41,7 @@
 
   home.sessionVariables = {
     EDITOR = "nvim";
+    BROWSER = "firefox";
     NIXOS_OZONE_WL = "1";
 
     PRISMA_QUERY_ENGINE_LIBRARY = "${pkgs.prisma-engines}/lib/libquery_engine.node";

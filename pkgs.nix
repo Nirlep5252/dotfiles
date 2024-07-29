@@ -56,6 +56,9 @@
     pkgs.dooit
     pkgs.gtk2
     pkgs.brave
+    pkgs.libstdcxx5
+    pkgs.poetry
+    pkgs.libclang
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas
@@ -70,7 +73,12 @@
       python-pkgs.pyperclip
       python-pkgs.plotly
       python-pkgs.pytesseract
-      python-pkgs.pytorch
+      python-pkgs.torch-bin
+      python-pkgs.torchvision-bin
+      python-pkgs.torchaudio-bin
+      (python-pkgs.safetensors.override { torch = python-pkgs.torch-bin; })
+      python-pkgs.einops
+      # python-pkgs.transformers
       python-pkgs.nltk
       # python-pkgs.spacy
       python-pkgs.wordcloud
@@ -79,7 +87,6 @@
       python-pkgs.anyqt
       python-pkgs.pyqt5
       python-pkgs.icecream
-      (python-pkgs.opencv4.override { enableGtk2 = true; })
     ]))
     (pkgs.nerdfonts.override
       { fonts = [ "FiraCode" "GeistMono" ]; }
