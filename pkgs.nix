@@ -63,6 +63,7 @@
     pkgs.qt5.full
     pkgs.shotcut
     pkgs.ffmpeg
+    pkgs.neovide
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas

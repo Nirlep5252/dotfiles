@@ -1,1 +1,1 @@
-/nix/store/74yg1a5i8pzv5pgnf321bprx2dmlfbl5-home-manager-files/.config/home-manager/hardware-configuration.nix
+/nix/store/9dqcfsxhy1n03z19aksb0hkcc6bdsa7x-home-manager-files/.config/home-manager/hardware-configuration.nix
