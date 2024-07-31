@@ -11,7 +11,7 @@
     ];
 
     wallpaper = [
-      "eDP-1,~/Pictures/Wallpapers/nezuko-kamado-4k.jpg"
+      ",~/Pictures/Wallpapers/nezuko-kamado-4k.jpg"
     ];
   };
 }

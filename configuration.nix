@@ -1,1 +1,1 @@
-/nix/store/syz6spczfyg7vmgfdaxvbfm3si608n92-home-manager-files/.config/home-manager/configuration.nix
+/nix/store/74yg1a5i8pzv5pgnf321bprx2dmlfbl5-home-manager-files/.config/home-manager/configuration.nix

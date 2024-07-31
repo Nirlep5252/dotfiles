@@ -1,7 +1,7 @@
 { ... }: {
   programs.hyprlock.enable = true;
   programs.hyprlock.settings = {
-    "$monitor" = "eDP-1";
+    "$monitor" = "";
     general = {
     };
 
