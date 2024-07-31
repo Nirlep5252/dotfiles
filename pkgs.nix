@@ -59,6 +59,10 @@
     pkgs.libstdcxx5
     pkgs.poetry
     pkgs.libclang
+    pkgs.mpv
+    pkgs.qt5.full
+    pkgs.shotcut
+    pkgs.ffmpeg
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas

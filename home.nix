@@ -12,7 +12,6 @@
   nixpkgs = {
     config = {
       allowUnfree = true;
-      cudaSupport = true;
     };
   };
 
@@ -37,6 +36,8 @@
     ".icons/whitesur".source = "${pkgs.whitesur-cursors}/share/icons/WhiteSur-cursors";
     ".icons/rose-pine".source = "${pkgs.rose-pine-cursor}/share/icons/BreezeX-RosePine-Linux";
     ".icons/rose-pine-dawn".source = "${pkgs.rose-pine-cursor}/share/icons/BreezeX-RosePineDawn-Linux";
+    ".config/home-manager/configuration.nix".source = "/etc/nixos/configuration.nix";
+    ".config/home-manager/hardware-configuration.nix".source = "/etc/nixos/hardware-configuration.nix";
   };
 
   home.sessionVariables = {
@@ -48,6 +49,10 @@
     PRISMA_QUERY_ENGINE_BINARY = "${pkgs.prisma-engines}/bin/query-engine";
     PRISMA_SCHEMA_ENGINE_BINARY = "${pkgs.prisma-engines}/bin/schema-engine";
   };
+
+  xsession.enable = true;
+  xsession.numlock.enable = true;
+  xsession.windowManager.i3.enable = true;
 
   gtk.enable = true;
 
