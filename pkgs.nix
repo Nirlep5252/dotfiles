@@ -2,14 +2,24 @@
 
 {
   home.packages = [
+    # terminal emulators
+    pkgs.kitty
+    pkgs.wezterm
+    pkgs.foot
+
+    # code editors
+    pkgs.vscode
+    pkgs.neovim
+    pkgs.neovide
+
+    # menus
+    pkgs.wofi
+    pkgs.rofi-wayland
+
     pkgs.dconf
     pkgs.gcc
-    pkgs.neovim
-    pkgs.kitty
     pkgs.firefox
     pkgs.fastfetch
-    pkgs.wofi
-    pkgs.vscode
     pkgs.waybar
     pkgs.wl-clipboard
     pkgs.cliphist
@@ -63,7 +73,6 @@
     pkgs.qt5.full
     pkgs.shotcut
     pkgs.ffmpeg
-    pkgs.neovide
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas
