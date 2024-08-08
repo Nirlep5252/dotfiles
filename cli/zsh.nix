@@ -15,6 +15,8 @@
       cd = "z";
     };
 
-    initExtra = "eval \"$(zoxide init zsh)\"";
+    initExtra = ''
+        eval "$(zoxide init zsh)";
+    '';
   };
 }

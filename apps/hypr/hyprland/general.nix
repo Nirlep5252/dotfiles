@@ -4,7 +4,7 @@
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ 
+    extraPortals = [
       pkgs.xdg-desktop-portal-gtk
     ];
   };
@@ -13,7 +13,7 @@
   wayland.windowManager.hyprland.settings = {
     "$mod" = "SUPER";
 
-    "$terminal" = "kitty";
+    "$terminal" = "foot";
     "$menu" = "wofi --show run";
     "$fileManager" = "nemo";
 

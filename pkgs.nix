@@ -3,9 +3,7 @@
 {
   home.packages = [
     # terminal emulators
-    pkgs.kitty
     pkgs.wezterm
-    pkgs.foot
 
     # code editors
     pkgs.vscode
@@ -71,8 +69,10 @@
     pkgs.libclang
     pkgs.mpv
     pkgs.qt5.full
-    pkgs.shotcut
     pkgs.ffmpeg
+    pkgs.chatterino2
+    pkgs.pandoc
+    pkgs.texliveTeTeX
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas
@@ -91,6 +91,7 @@
       python-pkgs.torchvision-bin
       python-pkgs.torchaudio-bin
       (python-pkgs.safetensors.override { torch = python-pkgs.torch-bin; })
+      python-pkgs.opencv4
       python-pkgs.einops
       # python-pkgs.transformers
       python-pkgs.nltk
