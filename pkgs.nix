@@ -16,7 +16,6 @@
 
     pkgs.dconf
     pkgs.gcc
-    pkgs.firefox
     pkgs.fastfetch
     pkgs.waybar
     pkgs.wl-clipboard
@@ -73,6 +72,17 @@
     pkgs.chatterino2
     pkgs.pandoc
     pkgs.texliveTeTeX
+    pkgs.gnomeExtensions.appindicator
+    pkgs.llvmPackages_latest.llvm
+    # pkgs.llvmPackages_latest.libcxxClang
+    # pkgs.llvmPackages_latest.libcxxStdenv
+
+    pkgs.lld
+    # pkgs.clang
+    # pkgs.clang-tools
+    pkgs.cppcheck
+
+    pkgs.flyctl
 
     (pkgs.python3.withPackages (python-pkgs: [
       python-pkgs.pandas

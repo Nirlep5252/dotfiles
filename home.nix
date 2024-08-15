@@ -12,6 +12,7 @@
   nixpkgs = {
     config = {
       allowUnfree = true;
+      firefox.enableGnomeExtensions = true;
     };
   };
 
@@ -20,6 +21,7 @@
     ./cli/_import.nix
     ./apps/_import.nix
   ];
+  programs.firefox.enable = true;
 
   xdg.mimeApps.enable = true;
   xdg.mimeApps.defaultApplications = {
@@ -50,6 +52,10 @@
     PRISMA_SCHEMA_ENGINE_BINARY = "${pkgs.prisma-engines}/bin/schema-engine";
   };
 
+  home.sessionPath = [
+    "$HOME/.local/bin"
+  ];
+
   xsession.enable = true;
   xsession.numlock.enable = true;
   xsession.windowManager.i3.enable = true;
@@ -57,7 +63,7 @@
   gtk.enable = true;
 
   gtk.cursorTheme.package = pkgs.whitesur-cursors;
-  gtk.cursorTheme.name = "rose-pine-dawn";
+  gtk.cursorTheme.name = "rose-pine";
 
   gtk.theme.package = pkgs.gnome.gnome-themes-extra;
   gtk.theme.name = "Adwaita-dark";
@@ -70,15 +76,18 @@
 
   # systemd.user.sessionVariables = config.home-manager.users.nirlep5252.home.sessionVariables;
 
+  # programs.dconf.enable = true;
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-schema = "prefer-dark";
     };
   };
-
-  home.pointerCursor = {
-    name = "WhiteSur Cursors";
-    package = pkgs.whitesur-cursors;
+  dconf.settings."org/gnome/shell" = {
+    disable-user-extensions = false;
+    enabled-extensions = with pkgs.gnomeExtensions; [
+      blur-my-shell.extensionUuid
+      gsconnect.extensionUuid
+    ];
   };
 
   # Let Home Manager install and manage itself.
